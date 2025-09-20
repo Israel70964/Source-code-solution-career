@@ -3,13 +3,52 @@
 {% block title %}Home - Software Solutions{% endblock %}
 
 {% block content %}
-<div class="hero-section bg-primary text-white py-5">
+<div class="hero-section bg-primary text-white py-5" style="margin-top: 100px;">
     <div class="container text-center">
         <h1 class="display-4">Find Your Dream Career</h1>
         <p class="lead">Connect with top companies and discover opportunities that match your skills</p>
         <a href="{{ url_for('careers') }}" class="btn btn-light btn-lg">Browse Jobs</a>
     </div>
 </div>
+
+    <div class="card bg-info text-white" style="width: 100%; height: auto; margin-bottom: 50px;">
+      <img src="static/images/com-user-image.png" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This                 content is a little bit longer.</p>
+        <p class="card-text">Last updated 3 mins ago</p>
+      </div>
+    </div>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-4 text-center mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Expert Guidance</h5>
+                    <p class="card-text">Get professional career advice from industry experts to advance your career.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Top Companies</h5>
+                    <p class="card-text">Access exclusive job opportunities from leading companies across various industries.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Career Growth</h5>
+                    <p class="card-text">Tools and resources to help you develop skills and advance in your career path.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div class="container my-5">
     <div class="row">
