@@ -20,7 +20,30 @@
                     <p class="card-text">{{ job.description }}</p>
                 </div>
                 <div class="card-footer">
-                    <button class="btn btn-primary">Apply Now</button>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <button class="btn btn-primary btn-sm">Apply Now</button>
+                        <a href="https://wa.me/1234567890?text=Hi%2C%20I%27m%20interested%20in%20the%20{{ job.title|urlencode }}%20position" 
+                           target="_blank" rel="noopener noreferrer" class="btn btn-success btn-sm">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                    <div class="social-share">
+                        <small class="text-muted d-block mb-2">Share this job:</small>
+                        <div class="d-flex gap-2">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u={{ request.url|urlencode }}" 
+                               target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm" aria-label="Share on Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20{{ job.title|urlencode }}%20job%20opportunity&url={{ request.url|urlencode }}" 
+                               target="_blank" rel="noopener noreferrer" class="btn btn-outline-info btn-sm" aria-label="Share on Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://wa.me/?text=Check%20out%20this%20{{ job.title|urlencode }}%20job%20opportunity%20{{ request.url|urlencode }}" 
+                               target="_blank" rel="noopener noreferrer" class="btn btn-outline-success btn-sm" aria-label="Share on WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
