@@ -48,7 +48,7 @@ def submit_contact():
     data = request.get_json()
     # In a real application, you would save this to a database
     # For now, just return a success response
-    return jsonify({'status': 'success', 'message': 'Thank you for your message!'})
+    return jsonify({'status': 'successful', 'message': 'Thank you for your message!'})
 
 if __name__ == '__main__':
     # Configure for Replit environment
